@@ -1,0 +1,23 @@
+
+<b>Put link from olx search(list of offers with pages). It will find links to offers, that include certain words inside offer description.</b></br> </br> 
+<form method="POST" class="post-form">{% csrf_token %}
+Link:</br> 
+<input type="text" size="50" name="link" ></br></br>
+Words(separated by space):</br> 
+<input type="text" size="50" name="words">
+<input type="hidden" name="search_type" value="words"></br></br>
+
+<button type="submit" class="save   btn btn-default">Search</button>
+</form>
+
+
+
+</br></br></br> 
+<b>Put link from olx search(list of offers with pages). It will display all prices, number of offers and average price.</b></br> </br> 
+<form method="POST" class="post-form">{% csrf_token %}
+Link:</br> 
+<input type="text" size="50" name="link" >
+<input type="hidden" name="search_type" value="prices"></br></br>
+
+<button type="submit" class="save   btn btn-default">Search</button>
+</form>
